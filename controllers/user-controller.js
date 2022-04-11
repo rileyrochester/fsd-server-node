@@ -26,7 +26,7 @@ const findUserById = (req, res) => {
 
 const findUsersByType = (type) => {
     return users.filter(function (e) {
-        return e.type == type;
+        return e.type === type;
     });
 }
 
